@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wellcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="WellcomeViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="AAi-dC-ddd">
+                                <rect key="frame" x="103.5" y="328" width="207" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2j-av-miX">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="跳第一頁"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="jumpToSecViewContollerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ES6-3S-eKI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHJ-Ed-1WS">
+                                        <rect key="frame" x="0.0" y="68" width="207" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="跳導航欄"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="jumpToNavigationContollerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySC-L7-Nkn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsm-1H-0JV">
+                                        <rect key="frame" x="0.0" y="136" width="207" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="跳分頁控制器"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="jumpToTabContollerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpW-32-825"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkS-Ga-Xh2">
+                                        <rect key="frame" x="0.0" y="204" width="207" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="跳其他的故事版"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="jumpToTabContollerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFs-3g-HPO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c2j-av-miX" firstAttribute="width" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="AD6-0Z-MgV"/>
+                            <constraint firstItem="AAi-dC-ddd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ked-Kg-gsQ"/>
+                            <constraint firstItem="AAi-dC-ddd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1h-9e-jhu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jumpNavigationVCButton" destination="zHJ-Ed-1WS" id="aMG-Lu-3me"/>
+                        <outlet property="jumpSecVCButton" destination="c2j-av-miX" id="2H2-Fo-chq"/>
+                        <outlet property="jumpSubStoryButton" destination="OkS-Ga-Xh2" id="Qvv-ez-5f5"/>
+                        <outlet property="jumpTabBarVCButton" destination="xsm-1H-0JV" id="5Yp-Dv-W1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="94"/>
+        </scene>
+        <!--Sec View Controller-->
+        <scene sceneID="o8F-VN-dKU">
+            <objects>
+                <viewController storyboardIdentifier="SecViewController" modalPresentationStyle="fullScreen" id="kVw-10-o78" customClass="SecViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TBw-xb-NrY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPc-1I-KLk">
+                                <rect key="frame" x="20" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Edf-KW-hsU"/>
+                                    <constraint firstAttribute="width" constant="45" id="Gq4-B0-QX2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewControllerAction:" destination="kVw-10-o78" eventType="touchUpInside" id="YPr-nW-aJc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="這是第二頁" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oL-J0-FPh">
+                                <rect key="frame" x="131" y="430" width="152" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7lt-Yz-Fr9"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="YPc-1I-KLk" firstAttribute="leading" secondItem="7lt-Yz-Fr9" secondAttribute="leading" constant="20" id="Cdt-zz-FLb"/>
+                            <constraint firstItem="4oL-J0-FPh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7lt-Yz-Fr9" secondAttribute="leading" constant="20" id="F1g-Ms-ket"/>
+                            <constraint firstItem="4oL-J0-FPh" firstAttribute="centerX" secondItem="TBw-xb-NrY" secondAttribute="centerX" id="TTC-8S-xiJ"/>
+                            <constraint firstItem="4oL-J0-FPh" firstAttribute="centerY" secondItem="TBw-xb-NrY" secondAttribute="centerY" id="x7M-8Q-qgZ"/>
+                            <constraint firstItem="YPc-1I-KLk" firstAttribute="top" secondItem="7lt-Yz-Fr9" secondAttribute="top" id="y6a-qO-IqJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myCenterLabel" destination="4oL-J0-FPh" id="CnL-3P-Vgj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvZ-vP-7rh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="94"/>
+        </scene>
+        <!--我是導航欄-->
+        <scene sceneID="P6Z-uJ-hKu">
+            <objects>
+                <viewController storyboardIdentifier="NavigationFirstViewController" id="nP5-2Z-MXu" customClass="NavigationFirstViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8T-QB-ndE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85M-aL-EXL">
+                                <rect key="frame" x="103.5" y="430" width="207" height="36"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="跳導航第二頁"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="jumpToSecViewContollerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0eb-ZN-0QY"/>
+                                    <action selector="pushSecAction:" destination="nP5-2Z-MXu" eventType="touchUpInside" id="kd6-Gu-VAj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eA1-iM-hNM"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="85M-aL-EXL" firstAttribute="centerY" secondItem="G8T-QB-ndE" secondAttribute="centerY" id="aZK-ma-21X"/>
+                            <constraint firstItem="85M-aL-EXL" firstAttribute="centerX" secondItem="G8T-QB-ndE" secondAttribute="centerX" id="gxy-OO-ZJ9"/>
+                            <constraint firstItem="85M-aL-EXL" firstAttribute="width" relation="greaterThanOrEqual" secondItem="G8T-QB-ndE" secondAttribute="width" multiplier="0.5" id="pGq-DP-fNT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我是導航欄" id="zNx-Ci-Joe">
+                        <barButtonItem key="leftBarButtonItem" id="rip-dH-sYe">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1J4-jh-ZkN">
+                                <rect key="frame" x="20" y="0.0" width="45" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="nP5-2Z-MXu" eventType="touchUpInside" id="Btu-cf-4Ux"/>
+                                    <action selector="dismissViewControllerAction:" destination="kVw-10-o78" eventType="touchUpInside" id="aLL-UG-g0v"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3w-M8-iZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="903"/>
+        </scene>
+        <!--我是導航第二頁-->
+        <scene sceneID="2CX-zl-S8G">
+            <objects>
+                <viewController storyboardIdentifier="NavigationSecViewController" title="我是導航第二頁" id="Br6-a7-myn" customClass="NavigationSecViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ef2-ip-DBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="這是導航欄第二頁" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-Lb-YWC">
+                                <rect key="frame" x="137.5" y="438" width="139" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HW8-eA-zId"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="OeZ-Lb-YWC" firstAttribute="centerY" secondItem="Ef2-ip-DBp" secondAttribute="centerY" id="tVk-I9-gDm"/>
+                            <constraint firstItem="OeZ-Lb-YWC" firstAttribute="centerX" secondItem="Ef2-ip-DBp" secondAttribute="centerX" id="x7s-Zv-iKn"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RL-dI-a1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2832" y="903"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="EY5-7V-WO2">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="r3Y-29-DTN" customClass="MainNavigationController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BmG-K3-oc1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nP5-2Z-MXu" kind="relationship" relationship="rootViewController" id="48t-aH-LEf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPr-Z3-C3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="903"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="k6j-Ce-W10">
+            <objects>
+                <viewController storyboardIdentifier="FirstTabViewController" id="5KV-5M-hAo" customClass="FirstTabViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRr-8C-eQF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是第一分頁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-U7-Hmq">
+                                <rect key="frame" x="116" y="430" width="182" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAp-Xl-t8h">
+                                <rect key="frame" x="20" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nUH-2A-fFR"/>
+                                    <constraint firstAttribute="width" constant="45" id="vyM-rC-jKt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="5KV-5M-hAo" eventType="touchUpInside" id="20b-R6-l7F"/>
+                                    <action selector="dismissViewControllerAction:" destination="kVw-10-o78" eventType="touchUpInside" id="UB7-ln-mXU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zzf-Z6-Ued"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WAp-Xl-t8h" firstAttribute="top" secondItem="Zzf-Z6-Ued" secondAttribute="top" id="Fes-tb-pJg"/>
+                            <constraint firstItem="WAp-Xl-t8h" firstAttribute="leading" secondItem="xRr-8C-eQF" secondAttribute="leading" constant="20" id="Ia8-Bj-aiw"/>
+                            <constraint firstItem="gjq-U7-Hmq" firstAttribute="centerY" secondItem="xRr-8C-eQF" secondAttribute="centerY" id="RXW-GP-rbF"/>
+                            <constraint firstItem="gjq-U7-Hmq" firstAttribute="centerX" secondItem="xRr-8C-eQF" secondAttribute="centerX" id="Zwq-jQ-M0a"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="star" catalog="system" id="2ua-cR-XWB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pno-Yj-nRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="1764"/>
+        </scene>
+        <!--Sec-->
+        <scene sceneID="k7d-Po-yX8">
+            <objects>
+                <viewController storyboardIdentifier="SecTabViewController" id="j5v-0u-Zni" customClass="SecTabViewController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GaF-tX-pBp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是第二分頁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fts-Z4-DiS">
+                                <rect key="frame" x="116" y="430" width="182" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-lb-Ouf">
+                                <rect key="frame" x="20" y="44" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mgz-Ab-TW1"/>
+                                    <constraint firstAttribute="width" constant="45" id="p9r-Nm-OWr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="5KV-5M-hAo" eventType="touchUpInside" id="JUS-5c-leh"/>
+                                    <action selector="dismissViewController:" destination="j5v-0u-Zni" eventType="touchUpInside" id="Mtd-FZ-WCy"/>
+                                    <action selector="dismissViewControllerAction:" destination="kVw-10-o78" eventType="touchUpInside" id="Qsl-Ka-MoS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="USt-yf-p4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SmN-lb-Ouf" firstAttribute="top" secondItem="USt-yf-p4e" secondAttribute="top" id="KXZ-ih-Hkm"/>
+                            <constraint firstItem="fts-Z4-DiS" firstAttribute="centerY" secondItem="GaF-tX-pBp" secondAttribute="centerY" id="ee2-bY-KEG"/>
+                            <constraint firstItem="fts-Z4-DiS" firstAttribute="centerX" secondItem="GaF-tX-pBp" secondAttribute="centerX" id="gB3-ou-cfi"/>
+                            <constraint firstItem="SmN-lb-Ouf" firstAttribute="leading" secondItem="USt-yf-p4e" secondAttribute="leading" constant="20" id="t6h-nO-BTb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sec" image="folder" catalog="system" id="rS8-mB-NNs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ech-bW-fQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="2490"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="uQ0-i3-VA0">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="0Zh-h3-Oat" customClass="MainTabBarController" customModule="iOSRouteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HaS-QV-rEz">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5KV-5M-hAo" kind="relationship" relationship="viewControllers" id="rGY-JD-rXg"/>
+                        <segue destination="j5v-0u-Zni" kind="relationship" relationship="viewControllers" id="fPj-cf-VkS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWz-dq-6Qk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="1764"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
